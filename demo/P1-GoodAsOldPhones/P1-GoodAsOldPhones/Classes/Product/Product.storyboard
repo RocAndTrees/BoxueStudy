@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="SWm-kv-fYO">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Products-->
+        <scene sceneID="7DM-UY-c6C">
+            <objects>
+                <navigationController id="SWm-kv-fYO" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Products" id="h19-n7-XHU"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="GIw-NV-FEJ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="AYD-gX-bIy" kind="relationship" relationship="rootViewController" id="tIc-qN-cAa"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gc9-tw-XkB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="729" y="24"/>
+        </scene>
+        <!--Home-->
+        <scene sceneID="iaU-5C-pNq">
+            <objects>
+                <viewController id="AYD-gX-bIy" customClass="ProductController" customModule="P1_GoodAsOldPhones" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="fVg-07-Vg9"/>
+                        <viewControllerLayoutGuide type="bottom" id="E4j-fo-lue"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="uZa-jD-qhw">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="62" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Y3Z-kF-1l0">
+                                <rect key="frame" x="0.0" y="64" width="375" height="554"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="productCell" rowHeight="94" id="s7S-Zy-bsL">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="94"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="s7S-Zy-bsL" id="6IX-c5-nlZ">
+                                            <rect key="frame" x="0.0" y="0.0" width="342" height="94"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="AYD-gX-bIy" id="1qb-kp-3ZL"/>
+                                    <outlet property="delegate" destination="AYD-gX-bIy" id="T7s-Yx-imA"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="Y3Z-kF-1l0" secondAttribute="trailing" id="Dml-5j-DTy"/>
+                            <constraint firstItem="Y3Z-kF-1l0" firstAttribute="top" secondItem="fVg-07-Vg9" secondAttribute="bottom" id="KJo-kX-da0"/>
+                            <constraint firstItem="Y3Z-kF-1l0" firstAttribute="leading" secondItem="uZa-jD-qhw" secondAttribute="leading" id="qwK-Os-ckS"/>
+                            <constraint firstItem="E4j-fo-lue" firstAttribute="top" secondItem="Y3Z-kF-1l0" secondAttribute="bottom" id="sl5-Ti-1ui"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Products" id="QWD-0W-LOR"/>
+                    <navigationItem key="navigationItem" title="Home" id="2FB-8f-DAV"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="thO-tO-pYT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1829.5999999999999" y="23.838080959520241"/>
+        </scene>
+    </scenes>
+</document>
