@@ -15,11 +15,17 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    
+    func shareMessage()  {
+
+        let avc : UIActivityViewController = UIActivityViewController(activityItems: ["分享给你", NSURL(string: "http://chrispangpang.github.io")!], applicationActivities: nil)
+        self.present(avc, animated: true, completion: nil)
     }
 
+    @IBAction func buttonAction(_ sender: Any) {
+        shareMessage()
+        
+    }
 
 }
 
