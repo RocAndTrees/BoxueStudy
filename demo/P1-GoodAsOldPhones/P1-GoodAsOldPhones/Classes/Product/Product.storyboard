@@ -39,7 +39,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="62" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Y3Z-kF-1l0">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="62" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Y3Z-kF-1l0">
                                 <rect key="frame" x="0.0" y="64" width="375" height="554"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
@@ -51,10 +51,13 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <connections>
+                                            <segue destination="kND-B9-usM" kind="push" identifier="showProduct" id="ISp-tr-yKO"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                                 <connections>
-                                    <outlet property="dataSource" destination="AYD-gX-bIy" id="1qb-kp-3ZL"/>
+                                    <outlet property="dataSource" destination="AYD-gX-bIy" id="rWY-tL-aq2"/>
                                     <outlet property="delegate" destination="AYD-gX-bIy" id="T7s-Yx-imA"/>
                                 </connections>
                             </tableView>
@@ -69,10 +72,32 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Products" id="QWD-0W-LOR"/>
                     <navigationItem key="navigationItem" title="Home" id="2FB-8f-DAV"/>
+                    <connections>
+                        <outlet property="myTableView" destination="Y3Z-kF-1l0" id="yiB-FR-EHv"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="thO-tO-pYT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1829.5999999999999" y="23.838080959520241"/>
+            <point key="canvasLocation" x="1826" y="51"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="ycL-Le-wXu">
+            <objects>
+                <viewController id="kND-B9-usM" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="IAQ-tH-ha6"/>
+                        <viewControllerLayoutGuide type="bottom" id="IE7-Uw-sV1"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="fij-CY-hFR">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Uw4-jT-Bdq"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9Pe-Ho-uww" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2618" y="51"/>
         </scene>
     </scenes>
 </document>
