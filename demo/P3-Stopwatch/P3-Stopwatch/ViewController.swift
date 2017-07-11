@@ -26,11 +26,7 @@ class ViewController: UIViewController {
 }
 
 
-extension ViewController{
-    
-    
-    
-}
+
 
 extension ViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -41,7 +37,7 @@ extension ViewController: UITableViewDataSource {
         let identifier: String = "lapCell"
         let cell: UITableViewCell = tableView.dequeueReusableCell(withIdentifier: identifier, for: indexPath)
         
-        if let labelNum = cell.viewWithTag(11) as? UILabel {
+        if (cell.viewWithTag(11) as? UILabel) != nil {
 //            labelNum.text = "Lap \(laps.count - (indexPath as NSIndexPath).row)"
         }
         if let labelTimer = cell.viewWithTag(12) as? UILabel {

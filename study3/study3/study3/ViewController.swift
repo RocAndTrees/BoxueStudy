@@ -15,8 +15,14 @@ class ViewController: UIViewController {
     
         
         
-        JudgmentsLoops_1().nume2()
-        
+//        JudgmentsLoops_1().nume2()
+        let pageControl = UIPageControl(frame: CGRect(x: 100, y: 200, width: 100, height: 20))
+        pageControl.backgroundColor = UIColor.red
+        pageControl.size(forNumberOfPages: 3)
+        pageControl.numberOfPages = 3
+        pageControl.currentPage = 2
+        //添加点击事件
+        self.view.addSubview(pageControl)
         
     }
 
