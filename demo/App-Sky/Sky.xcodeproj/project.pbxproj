@@ -7,13 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		C1A5909D1FD52F77001B2ACA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1A5909C1FD52F77001B2ACA /* AppDelegate.swift */; };
-		C1A5909F1FD52F77001B2ACA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1A5909E1FD52F77001B2ACA /* ViewController.swift */; };
-		C1A590A21FD52F77001B2ACA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C1A590A01FD52F77001B2ACA /* Main.storyboard */; };
-		C1A590A41FD52F77001B2ACA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C1A590A31FD52F77001B2ACA /* Assets.xcassets */; };
-		C1A590A71FD52F77001B2ACA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C1A590A51FD52F77001B2ACA /* LaunchScreen.storyboard */; };
 		C1A590B21FD52F77001B2ACA /* SkyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1A590B11FD52F77001B2ACA /* SkyTests.swift */; };
 		C1A590BD1FD52F77001B2ACA /* SkyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1A590BC1FD52F77001B2ACA /* SkyUITests.swift */; };
+		C1A590D81FD53059001B2ACA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C1A590D01FD53059001B2ACA /* Assets.xcassets */; };
+		C1A590D91FD53059001B2ACA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1A590D21FD53059001B2ACA /* ViewController.swift */; };
+		C1A590DA1FD53059001B2ACA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1A590D41FD53059001B2ACA /* AppDelegate.swift */; };
+		C1A590DB1FD53059001B2ACA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C1A590D61FD53059001B2ACA /* LaunchScreen.storyboard */; };
+		C1A590DC1FD53059001B2ACA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C1A590D71FD53059001B2ACA /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,18 +35,17 @@
 
 /* Begin PBXFileReference section */
 		C1A590991FD52F77001B2ACA /* Sky.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sky.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		C1A5909C1FD52F77001B2ACA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		C1A5909E1FD52F77001B2ACA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		C1A590A11FD52F77001B2ACA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		C1A590A31FD52F77001B2ACA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		C1A590A61FD52F77001B2ACA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		C1A590A81FD52F77001B2ACA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C1A590AD1FD52F77001B2ACA /* SkyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SkyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C1A590B11FD52F77001B2ACA /* SkyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkyTests.swift; sourceTree = "<group>"; };
 		C1A590B31FD52F77001B2ACA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C1A590B81FD52F77001B2ACA /* SkyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SkyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C1A590BC1FD52F77001B2ACA /* SkyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkyUITests.swift; sourceTree = "<group>"; };
 		C1A590BE1FD52F77001B2ACA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C1A590D01FD53059001B2ACA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C1A590D21FD53059001B2ACA /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C1A590D41FD53059001B2ACA /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C1A590D61FD53059001B2ACA /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C1A590D71FD53059001B2ACA /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,12 +96,10 @@
 		C1A5909B1FD52F77001B2ACA /* Sky */ = {
 			isa = PBXGroup;
 			children = (
-				C1A5909C1FD52F77001B2ACA /* AppDelegate.swift */,
-				C1A5909E1FD52F77001B2ACA /* ViewController.swift */,
-				C1A590A01FD52F77001B2ACA /* Main.storyboard */,
-				C1A590A31FD52F77001B2ACA /* Assets.xcassets */,
-				C1A590A51FD52F77001B2ACA /* LaunchScreen.storyboard */,
-				C1A590A81FD52F77001B2ACA /* Info.plist */,
+				C1A590D31FD53059001B2ACA /* Delegates */,
+				C1A590CF1FD53059001B2ACA /* Resources */,
+				C1A590D51FD53059001B2ACA /* StroyBoards */,
+				C1A590D11FD53059001B2ACA /* ViewController */,
 			);
 			path = Sky;
 			sourceTree = "<group>";
@@ -123,6 +120,39 @@
 				C1A590BE1FD52F77001B2ACA /* Info.plist */,
 			);
 			path = SkyUITests;
+			sourceTree = "<group>";
+		};
+		C1A590CF1FD53059001B2ACA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				C1A590D01FD53059001B2ACA /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		C1A590D11FD53059001B2ACA /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				C1A590D21FD53059001B2ACA /* ViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		C1A590D31FD53059001B2ACA /* Delegates */ = {
+			isa = PBXGroup;
+			children = (
+				C1A590D41FD53059001B2ACA /* AppDelegate.swift */,
+			);
+			path = Delegates;
+			sourceTree = "<group>";
+		};
+		C1A590D51FD53059001B2ACA /* StroyBoards */ = {
+			isa = PBXGroup;
+			children = (
+				C1A590D61FD53059001B2ACA /* LaunchScreen.storyboard */,
+				C1A590D71FD53059001B2ACA /* Main.storyboard */,
+			);
+			path = StroyBoards;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -232,9 +262,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C1A590A71FD52F77001B2ACA /* LaunchScreen.storyboard in Resources */,
-				C1A590A41FD52F77001B2ACA /* Assets.xcassets in Resources */,
-				C1A590A21FD52F77001B2ACA /* Main.storyboard in Resources */,
+				C1A590DC1FD53059001B2ACA /* Main.storyboard in Resources */,
+				C1A590D81FD53059001B2ACA /* Assets.xcassets in Resources */,
+				C1A590DB1FD53059001B2ACA /* LaunchScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,8 +289,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C1A5909F1FD52F77001B2ACA /* ViewController.swift in Sources */,
-				C1A5909D1FD52F77001B2ACA /* AppDelegate.swift in Sources */,
+				C1A590DA1FD53059001B2ACA /* AppDelegate.swift in Sources */,
+				C1A590D91FD53059001B2ACA /* ViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -294,25 +324,6 @@
 			targetProxy = C1A590B91FD52F77001B2ACA /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		C1A590A01FD52F77001B2ACA /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				C1A590A11FD52F77001B2ACA /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		C1A590A51FD52F77001B2ACA /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				C1A590A61FD52F77001B2ACA /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		C1A590BF1FD52F77001B2ACA /* Debug */ = {
@@ -428,7 +439,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = R5QX2A2ZZB;
-				INFOPLIST_FILE = Sky/Info.plist;
+				INFOPLIST_FILE = Sky/SuportingFiles/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.rocfly.Sky;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -443,7 +454,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = R5QX2A2ZZB;
-				INFOPLIST_FILE = Sky/Info.plist;
+				INFOPLIST_FILE = Sky/SuportingFiles/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.rocfly.Sky;
 				PRODUCT_NAME = "$(TARGET_NAME)";
