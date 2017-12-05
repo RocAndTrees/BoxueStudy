@@ -135,6 +135,7 @@
                             <constraint firstItem="MPc-Uu-2AC" firstAttribute="top" secondItem="aFx-aN-DWc" secondAttribute="top" constant="8" id="v9U-0e-IfZ"/>
                             <constraint firstItem="o9p-IS-iHQ" firstAttribute="top" secondItem="XZq-0j-bTE" secondAttribute="bottom" constant="8" id="v9l-rr-RyX"/>
                         </constraints>
+                        <viewLayoutGuide key="safeArea" id="W1w-Is-jUi"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aR8-BC-A3E" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -149,11 +150,12 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="382.5"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="W1o-lU-NOj"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6io-Gs-Xaq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1374" y="231"/>
+            <point key="canvasLocation" x="1290" y="246"/>
         </scene>
     </scenes>
     <resources>
