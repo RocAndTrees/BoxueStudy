@@ -20,4 +20,7 @@ let pi = Double(three) + pointOneFourOneFiveNine
 typealias AudioSample = UInt16
 var maxAmplitudeFound = AudioSample.min
 
+/* Enforcing Preconditions*/
 
+let index = 3
+precondition(index > 0, "Index must be greater than zero.") //条件不对 就报错
