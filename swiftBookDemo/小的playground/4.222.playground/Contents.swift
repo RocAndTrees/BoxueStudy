@@ -65,25 +65,4 @@ end
 """
 print(goodStart + end)
 
-//let greeting = "Guten Tag!"
-//greeting.endIndex
-//print(greeting.endIndex)
-//
-//var welcome = "hello"
-//welcome.insert("!", at: welcome.endIndex)
-//welcome.insert(contentsOf: " there", at: welcome.index(before: welcome.endIndex))
-
-/// Substrings
-
-let greeting = "Hello, world!"
-let index1 = greeting.index(of: ",") ?? greeting.endIndex
-let beginning = greeting[..<index1]
-beginning.description
-let newString = String(beginning)
-
-
-
-
-
-
 
