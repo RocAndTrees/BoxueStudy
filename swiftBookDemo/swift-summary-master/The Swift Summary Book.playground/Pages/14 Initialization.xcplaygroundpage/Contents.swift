@@ -12,6 +12,16 @@
 
 import UIKit
 
+struct Fahrenheit {
+    var temperature : Double
+    init() {
+        temperature = 32.0
+    }
+}
+
+var f = Fahrenheit()
+print("The default temperature is \(f.temperature)° Fahrenheit")
+
 
 struct Celsius {
     var temperatureInCelsius: Double
@@ -25,6 +35,26 @@ struct Celsius {
         temperatureInCelsius = celsius
     }
 }
+
+
+class SurveyQuestion {
+    var text: String
+    var response: String?
+    init(text: String) {
+        self.text = text
+    }
+    func ask() {
+        print(text)
+    }
+}
+let cheeseQuestion = SurveyQuestion(text: "Do you like cheese?")
+cheeseQuestion.ask()
+// prints "Do you like cheese?"
+cheeseQuestion.response
+cheeseQuestion.response = "Yes, I do like cheese."
+
+
+
 
 /*
  For the struct, a memberwise initializer is provided. This means that stored properties don't
@@ -61,6 +91,16 @@ struct Rect {
         self.init(origin: Point(x: originX, y: originY), size: size)
     }
 }
+
+let basicRect = Rect()
+
+let originRect = Rect(origin: Point(x: 2.0, y: 2.0),
+                      size: Size(width: 5.0, height: 5.0))
+// originRect's origin is (2.0, 2.0) and its size is (5.0, 5.0)
+let centerRect = Rect(center: Point(x: 4.0, y: 4.0),
+                      size: Size(width: 3.0, height: 3.0))
+// centerRect's origin is (2.5, 2.5) and its size is (3.0, 3.0)
+
 
 /*
  ==================================
