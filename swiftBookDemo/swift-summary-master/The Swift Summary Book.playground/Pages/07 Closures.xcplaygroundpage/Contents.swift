@@ -25,6 +25,9 @@ var array = ["John", "Tim", "Steve"]
 
 var reversed = array.sorted(by: {(s1: String, s2: String) -> Bool in return s1 > s2})
 
+reversed
+
+
 //: Using type inference, we can omit the params and return types. This is true when passing closures as params to a function.
 reversed = array.sorted(by: {s1, s2 in return s1 > s2})
 
@@ -46,6 +49,7 @@ reversed = array.sorted(by: >)
 func someFunctionThatTakesAClosure(closure: () -> ()) {
     // function body goes here
 }
+
 
 /*:
  Closures which are too long to be defined inline.
@@ -75,6 +79,7 @@ let numbers = [16, 58, 510]
 let stringsArray = numbers.map {
     (number) -> String in
     var number = number
+    print(number)
     var output = ""
     while number > 0 {
         output = digitNames[number % 10]! + output //Note how the optional value returned from the dic subscript is force-unwrapped, since a value is guaranteed.
@@ -107,3 +112,47 @@ func serve(customer customerProvider: @autoclosure () -> String) {
     print("Now serving \(customerProvider())!")
 }
 serve(customer: customersInLine.remove(at: 0)) //We are not required to use the curly braces, since the code will be wrapped in a closure thanks to @autoclosure
+
+//
+var completionhandlers: [() -> Void] = []
+func someFunctionWithEscapingClousure(completionHandler: @escaping () -> Void) {
+    completionhandlers.append(completionHandler)
+//    completionHandler()
+}
+//completionhandlers
+//someFunctionWithEscapingClousure {
+////    print("ssss")
+//}
+
+
+func someFunctionWithNonescapingClousure(closure: () -> Void) {
+    closure()
+}
+
+class SomeClass {
+    var x = 10
+    func doSomething() {
+        someFunctionWithEscapingClousure {
+            self.x = 100
+        }
+        
+        someFunctionWithNonescapingClousure {
+            x = 200
+        }
+    }
+    
+}
+
+let instanc = SomeClass()
+instanc.doSomething()
+print(instanc.x)
+
+
+completionhandlers.first?()
+print(instanc.x)
+
+
+
+
+
+

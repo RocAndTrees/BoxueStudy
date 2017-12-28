@@ -40,6 +40,7 @@ if shoppingList.isEmpty { //Checks if count == 0
     print("The shopping list is not empty.")
 }
 
+
 shoppingList.append("Cow") //At the end of the array
 shoppingList += ["Bird", "Shark"]
 
@@ -61,6 +62,33 @@ var reversedShoppingList: [String] = shoppingList.reversed()
 
 reversedShoppingList.removeLast() // Removes last item. Remove the first with removeFirst(). No returned value.
 reversedShoppingList.popLast() // Pops the last item, removing it from the array and also returning it. Note that if the array is empty, the returned value is nil.
+
+for item in shoppingList {
+    print("forinShoppingList \(item)")
+}
+
+//: ## Set
+
+var letters = Set<Character>()
+print("letters is of type Set<Cahracter> with \(letters.count) items.")
+
+letters.insert("a")
+letters
+
+var favoriteGenres: Set<String> = ["Rock", "Classical", "Hip hop"]
+var favoriteGenres2: Set = ["Rock", "Classical", "Hip hop"]
+
+if let removedGence = favoriteGenres.remove("Rock") {
+    print("\(removedGence) I'm over it")
+} else {
+    print("I never much cared for that.")
+}
+// removeAll
+
+//判读两个集合 是否包含同个值
+
+
+
 
 //: ## Dictionaries
 

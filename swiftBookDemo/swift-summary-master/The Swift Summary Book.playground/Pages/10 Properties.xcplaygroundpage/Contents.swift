@@ -41,6 +41,15 @@ struct FixedLengthRange {
     }
 }
 
+let rangeOfFourItems = FixedLengthRange(firstValue: 0, length: 4)
+FixedLengthRange.storedTypeProperty = "sssss"
+FixedLengthRange.storedTypeProperty
+
+
+
+
+
+
 class DataImporter {
     /*
      DataImporter is a class to import data from an external file.

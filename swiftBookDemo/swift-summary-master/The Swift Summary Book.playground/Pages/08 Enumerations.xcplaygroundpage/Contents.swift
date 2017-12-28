@@ -23,6 +23,10 @@ enum CompassPoint {
     case West
 }
 
+print(CompassPoint.North)
+
+
+
 /*
  Defines an enum with members with explicit types.
  */
@@ -61,4 +65,5 @@ if let lineFeed = ASCIIControlCharacter(rawValue: "\r") {
     //Do something
     print(lineFeed)
 }
+
 

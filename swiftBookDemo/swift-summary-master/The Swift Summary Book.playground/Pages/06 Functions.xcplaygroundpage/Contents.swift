@@ -38,6 +38,8 @@ func arithmeticMean(numbers: Double...) -> Double {
     return total / Double(numbers.count)
 }
 
+
+
 //In this example, the inout prefix defines that the passed parameters' values can be modified,
 //and this will be reflected on the original variables defined outside of the function.
 func swapTwoInts( a: inout Int, b: inout Int) {
@@ -61,6 +63,15 @@ func chooseStepFunction(backwards: Bool) -> (Int) -> Int {
 }
 
 
+func someFunction(_ first: Int,_ second: Int) {
+    
+}
+
+
+someFunction(10, 10)
+
+
+
 //Start
 sayHello(personName: "Juan")
 
@@ -74,6 +85,10 @@ arithmeticMean(numbers: 4,5,6,7)
 var someInt = 3
 var anotherInt = 107
 swapTwoInts(a: &someInt, b: &anotherInt)
+//inout
 
 //Here we are defining a var of type function.
 var mathFunction: (String) -> String = sayHello
+
+
+

@@ -72,7 +72,7 @@ struct Resolution {
 
 class ViewController: UIViewController {
     
-    var resolution = Resolution()
+    var resolution = Resolution(width: 291, height: 29)
     var interlaced = false
     var frameRate = 0.0
     var name: String?
@@ -86,5 +86,7 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 }
+
+
 
 

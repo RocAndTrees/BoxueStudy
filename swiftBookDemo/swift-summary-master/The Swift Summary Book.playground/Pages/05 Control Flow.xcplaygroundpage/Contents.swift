@@ -9,7 +9,7 @@
 //
 // |=------------------------------------------------------=|
 
-
+import Foundation
 //Index is implicitly declared
 for index in 1...5 {
     print("Index is \(index)")
@@ -32,7 +32,36 @@ for char in "Yes".characters {
     print("\(char)")
 }
 
-//Switches
+let minuteInterval = 5
+let minutes = 60
+
+for tickMark in stride(from: 0, to: minutes, by: minuteInterval) {
+//    print(tickMark)
+}
+
+
+//: ## While 如果条件为true 语句集合会重复执行到条件编程false
+let finalSquare = 25
+var board = [Int](repeating: 0, count: finalSquare+1)
+
+board[03] = +08; board[06] = +11; board[09] = +09; board[10] = +02
+board[14] = -10; board[19] = -11; board[22] = -02; board[24] = -08
+var square = 0
+
+while square < finalSquare {
+    var dicRoll = Int(arc4random_uniform(6)) + 1;
+
+    square += dicRoll
+    if square < board.count {
+        square += board[square]
+    }
+    print(square)
+}
+
+print("game over!")
+
+
+//: ## Switches
 
 // No need for break, and every case must have some code.
 let someChar = "e"
@@ -85,6 +114,9 @@ case let (z, w): //This acts as the default case. Since it is only assigning a t
     print("somewhere else at (\(z), \(w))")
 }
 
+//: Where 额外检查情况
+
+
 // Bind both values, plus test a condition.
 switch anotherPoint {
 case let (x, y) where x == y:
@@ -97,16 +129,26 @@ default:
 switch anotherPoint {
 case let (x, y) where x == y:
     print("x = y")
-    fallthrough
+//    throw
 default:
     print(" are equal")
 }
 
 //Nesting while, for and switches can be confusing sometimes
 //Use labels to better use the break and continue statements
+//标签
+//master: while true {
+//    loop: for rats in 1...5{
+//        continue master
+//    }
+//}
 
-master: while true {
-    loop: for rats in 1...5{
-        continue master
-    }
+//: guard else
+
+guard true else {
+    print("guard")
+}
+
+if #available(iOS 10, *) {
+    print("100")
 }

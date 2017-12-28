@@ -37,6 +37,7 @@ struct Matrix {
         set {
             assert(indexIsValidForRow(row: row, column: column), "Index out of range")
             grid[(row * columns) + column] = newValue
+//            assert(indexIsValidForRow(row: row, column: column), "越界啦啦啦啦啦")
         }
     }
 }
