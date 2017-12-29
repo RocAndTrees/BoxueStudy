@@ -1,0 +1,580 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C18B601D1FF53A1B0079AB5C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C18B601C1FF53A1B0079AB5C /* AppDelegate.swift */; };
+		C18B601F1FF53A1B0079AB5C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C18B601E1FF53A1B0079AB5C /* ViewController.swift */; };
+		C18B60221FF53A1B0079AB5C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C18B60201FF53A1B0079AB5C /* Main.storyboard */; };
+		C18B60251FF53A1B0079AB5C /* SupeKitty.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C18B60231FF53A1B0079AB5C /* SupeKitty.xcdatamodeld */; };
+		C18B60271FF53A1B0079AB5C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C18B60261FF53A1B0079AB5C /* Assets.xcassets */; };
+		C18B602A1FF53A1B0079AB5C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C18B60281FF53A1B0079AB5C /* LaunchScreen.storyboard */; };
+		C18B60351FF53A1C0079AB5C /* SupeKittyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C18B60341FF53A1C0079AB5C /* SupeKittyTests.swift */; };
+		C18B60401FF53A1C0079AB5C /* SupeKittyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C18B603F1FF53A1C0079AB5C /* SupeKittyUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C18B60311FF53A1C0079AB5C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C18B60111FF53A1B0079AB5C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C18B60181FF53A1B0079AB5C;
+			remoteInfo = SupeKitty;
+		};
+		C18B603C1FF53A1C0079AB5C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C18B60111FF53A1B0079AB5C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C18B60181FF53A1B0079AB5C;
+			remoteInfo = SupeKitty;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		C18B60191FF53A1B0079AB5C /* SupeKitty.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SupeKitty.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C18B601C1FF53A1B0079AB5C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C18B601E1FF53A1B0079AB5C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C18B60211FF53A1B0079AB5C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C18B60241FF53A1B0079AB5C /* SupeKitty.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SupeKitty.xcdatamodel; sourceTree = "<group>"; };
+		C18B60261FF53A1B0079AB5C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C18B60291FF53A1B0079AB5C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C18B602B1FF53A1B0079AB5C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C18B60301FF53A1C0079AB5C /* SupeKittyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SupeKittyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C18B60341FF53A1C0079AB5C /* SupeKittyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SupeKittyTests.swift; sourceTree = "<group>"; };
+		C18B60361FF53A1C0079AB5C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C18B603B1FF53A1C0079AB5C /* SupeKittyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SupeKittyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C18B603F1FF53A1C0079AB5C /* SupeKittyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SupeKittyUITests.swift; sourceTree = "<group>"; };
+		C18B60411FF53A1C0079AB5C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C18B60161FF53A1B0079AB5C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C18B602D1FF53A1C0079AB5C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C18B60381FF53A1C0079AB5C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C18B60101FF53A1B0079AB5C = {
+			isa = PBXGroup;
+			children = (
+				C18B601B1FF53A1B0079AB5C /* SupeKitty */,
+				C18B60331FF53A1C0079AB5C /* SupeKittyTests */,
+				C18B603E1FF53A1C0079AB5C /* SupeKittyUITests */,
+				C18B601A1FF53A1B0079AB5C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C18B601A1FF53A1B0079AB5C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C18B60191FF53A1B0079AB5C /* SupeKitty.app */,
+				C18B60301FF53A1C0079AB5C /* SupeKittyTests.xctest */,
+				C18B603B1FF53A1C0079AB5C /* SupeKittyUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C18B601B1FF53A1B0079AB5C /* SupeKitty */ = {
+			isa = PBXGroup;
+			children = (
+				C18B601C1FF53A1B0079AB5C /* AppDelegate.swift */,
+				C18B601E1FF53A1B0079AB5C /* ViewController.swift */,
+				C18B60201FF53A1B0079AB5C /* Main.storyboard */,
+				C18B60261FF53A1B0079AB5C /* Assets.xcassets */,
+				C18B60281FF53A1B0079AB5C /* LaunchScreen.storyboard */,
+				C18B602B1FF53A1B0079AB5C /* Info.plist */,
+				C18B60231FF53A1B0079AB5C /* SupeKitty.xcdatamodeld */,
+			);
+			path = SupeKitty;
+			sourceTree = "<group>";
+		};
+		C18B60331FF53A1C0079AB5C /* SupeKittyTests */ = {
+			isa = PBXGroup;
+			children = (
+				C18B60341FF53A1C0079AB5C /* SupeKittyTests.swift */,
+				C18B60361FF53A1C0079AB5C /* Info.plist */,
+			);
+			path = SupeKittyTests;
+			sourceTree = "<group>";
+		};
+		C18B603E1FF53A1C0079AB5C /* SupeKittyUITests */ = {
+			isa = PBXGroup;
+			children = (
+				C18B603F1FF53A1C0079AB5C /* SupeKittyUITests.swift */,
+				C18B60411FF53A1C0079AB5C /* Info.plist */,
+			);
+			path = SupeKittyUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C18B60181FF53A1B0079AB5C /* SupeKitty */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C18B60441FF53A1C0079AB5C /* Build configuration list for PBXNativeTarget "SupeKitty" */;
+			buildPhases = (
+				C18B60151FF53A1B0079AB5C /* Sources */,
+				C18B60161FF53A1B0079AB5C /* Frameworks */,
+				C18B60171FF53A1B0079AB5C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SupeKitty;
+			productName = SupeKitty;
+			productReference = C18B60191FF53A1B0079AB5C /* SupeKitty.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C18B602F1FF53A1C0079AB5C /* SupeKittyTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C18B60471FF53A1C0079AB5C /* Build configuration list for PBXNativeTarget "SupeKittyTests" */;
+			buildPhases = (
+				C18B602C1FF53A1C0079AB5C /* Sources */,
+				C18B602D1FF53A1C0079AB5C /* Frameworks */,
+				C18B602E1FF53A1C0079AB5C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C18B60321FF53A1C0079AB5C /* PBXTargetDependency */,
+			);
+			name = SupeKittyTests;
+			productName = SupeKittyTests;
+			productReference = C18B60301FF53A1C0079AB5C /* SupeKittyTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		C18B603A1FF53A1C0079AB5C /* SupeKittyUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C18B604A1FF53A1C0079AB5C /* Build configuration list for PBXNativeTarget "SupeKittyUITests" */;
+			buildPhases = (
+				C18B60371FF53A1C0079AB5C /* Sources */,
+				C18B60381FF53A1C0079AB5C /* Frameworks */,
+				C18B60391FF53A1C0079AB5C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C18B603D1FF53A1C0079AB5C /* PBXTargetDependency */,
+			);
+			name = SupeKittyUITests;
+			productName = SupeKittyUITests;
+			productReference = C18B603B1FF53A1C0079AB5C /* SupeKittyUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C18B60111FF53A1B0079AB5C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0910;
+				LastUpgradeCheck = 0910;
+				ORGANIZATIONNAME = yunbo;
+				TargetAttributes = {
+					C18B60181FF53A1B0079AB5C = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+					};
+					C18B602F1FF53A1C0079AB5C = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = C18B60181FF53A1B0079AB5C;
+					};
+					C18B603A1FF53A1C0079AB5C = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = C18B60181FF53A1B0079AB5C;
+					};
+				};
+			};
+			buildConfigurationList = C18B60141FF53A1B0079AB5C /* Build configuration list for PBXProject "SupeKitty" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C18B60101FF53A1B0079AB5C;
+			productRefGroup = C18B601A1FF53A1B0079AB5C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C18B60181FF53A1B0079AB5C /* SupeKitty */,
+				C18B602F1FF53A1C0079AB5C /* SupeKittyTests */,
+				C18B603A1FF53A1C0079AB5C /* SupeKittyUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C18B60171FF53A1B0079AB5C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C18B602A1FF53A1B0079AB5C /* LaunchScreen.storyboard in Resources */,
+				C18B60271FF53A1B0079AB5C /* Assets.xcassets in Resources */,
+				C18B60221FF53A1B0079AB5C /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C18B602E1FF53A1C0079AB5C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C18B60391FF53A1C0079AB5C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C18B60151FF53A1B0079AB5C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C18B601F1FF53A1B0079AB5C /* ViewController.swift in Sources */,
+				C18B601D1FF53A1B0079AB5C /* AppDelegate.swift in Sources */,
+				C18B60251FF53A1B0079AB5C /* SupeKitty.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C18B602C1FF53A1C0079AB5C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C18B60351FF53A1C0079AB5C /* SupeKittyTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C18B60371FF53A1C0079AB5C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C18B60401FF53A1C0079AB5C /* SupeKittyUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C18B60321FF53A1C0079AB5C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C18B60181FF53A1B0079AB5C /* SupeKitty */;
+			targetProxy = C18B60311FF53A1C0079AB5C /* PBXContainerItemProxy */;
+		};
+		C18B603D1FF53A1C0079AB5C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C18B60181FF53A1B0079AB5C /* SupeKitty */;
+			targetProxy = C18B603C1FF53A1C0079AB5C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C18B60201FF53A1B0079AB5C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C18B60211FF53A1B0079AB5C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		C18B60281FF53A1B0079AB5C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C18B60291FF53A1B0079AB5C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C18B60421FF53A1C0079AB5C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C18B60431FF53A1C0079AB5C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C18B60451FF53A1C0079AB5C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = R5QX2A2ZZB;
+				INFOPLIST_FILE = SupeKitty/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.rocfly.map.tests.SupeKitty;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		C18B60461FF53A1C0079AB5C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = R5QX2A2ZZB;
+				INFOPLIST_FILE = SupeKitty/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.rocfly.map.tests.SupeKitty;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		C18B60481FF53A1C0079AB5C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = R5QX2A2ZZB;
+				INFOPLIST_FILE = SupeKittyTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.rocfly.map.tests.SupeKittyTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SupeKitty.app/SupeKitty";
+			};
+			name = Debug;
+		};
+		C18B60491FF53A1C0079AB5C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = R5QX2A2ZZB;
+				INFOPLIST_FILE = SupeKittyTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.rocfly.map.tests.SupeKittyTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SupeKitty.app/SupeKitty";
+			};
+			name = Release;
+		};
+		C18B604B1FF53A1C0079AB5C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = R5QX2A2ZZB;
+				INFOPLIST_FILE = SupeKittyUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.rocfly.map.tests.SupeKittyUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SupeKitty;
+			};
+			name = Debug;
+		};
+		C18B604C1FF53A1C0079AB5C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = R5QX2A2ZZB;
+				INFOPLIST_FILE = SupeKittyUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.rocfly.map.tests.SupeKittyUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SupeKitty;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C18B60141FF53A1B0079AB5C /* Build configuration list for PBXProject "SupeKitty" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C18B60421FF53A1C0079AB5C /* Debug */,
+				C18B60431FF53A1C0079AB5C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C18B60441FF53A1C0079AB5C /* Build configuration list for PBXNativeTarget "SupeKitty" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C18B60451FF53A1C0079AB5C /* Debug */,
+				C18B60461FF53A1C0079AB5C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C18B60471FF53A1C0079AB5C /* Build configuration list for PBXNativeTarget "SupeKittyTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C18B60481FF53A1C0079AB5C /* Debug */,
+				C18B60491FF53A1C0079AB5C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C18B604A1FF53A1C0079AB5C /* Build configuration list for PBXNativeTarget "SupeKittyUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C18B604B1FF53A1C0079AB5C /* Debug */,
+				C18B604C1FF53A1C0079AB5C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		C18B60231FF53A1B0079AB5C /* SupeKitty.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				C18B60241FF53A1B0079AB5C /* SupeKitty.xcdatamodel */,
+			);
+			currentVersion = C18B60241FF53A1B0079AB5C /* SupeKitty.xcdatamodel */;
+			path = SupeKitty.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = C18B60111FF53A1B0079AB5C /* Project object */;
+}

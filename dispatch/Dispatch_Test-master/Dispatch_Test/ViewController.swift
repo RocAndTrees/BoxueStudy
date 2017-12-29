@@ -36,7 +36,9 @@ class ViewController: UIViewController {
             queue.activate()
         }
     }
-    
+    /*:
+     # wwee
+    */
     //串行同步,主线程上按顺序执行，不能开子线程
     func serialSync() {
         let queue1 = DispatchQueue(label: "com.ittmom1.www")
