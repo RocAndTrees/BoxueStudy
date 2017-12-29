@@ -247,7 +247,7 @@ class HTMLElement2 {
     let name: String
     let text: String?
     
-    lazy var asHTML: (Void) -> String = {
+    lazy var asHTML: () -> String = {
         [unowned self] in //Closure List
         if let text = self.text {
             return "<\(self.name)>\(text)</\(self.name)>"

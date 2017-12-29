@@ -199,21 +199,21 @@ class Person: Human {
 
 // For enums, nil can be returned at any point of initalizations
 
-enum TemperatureUnit {
-    case Kelvin, Celsius, Fahrenheit
-    init?(symbol: Character) {
-        switch symbol {
-        case "K":
-            self = .Kelvin
-        case "C":
-            self = .Celsius
-        case "F":
-            self = .Fahrenheit
-        default:
-            return nil
-        }
-    }
-}
+//enum TemperatureUnit {
+//    case Kelvin, Celsius, Fahrenheit
+//    init?(symbol: Character) {
+//        switch symbol {
+//        case "K":
+//            self = .Kelvin
+//        case "C":
+//            self = .Celsius
+//        case "F":
+//            self = .Fahrenheit
+//        default:
+//            return nil
+//        }
+//    }
+//}
 
 // For class instances, nil can only be returned after initalizing all properties.
 
@@ -274,4 +274,24 @@ class ViewController: UIViewController {
         
     }
 }
+
+
+enum TemperatureUnit: Character {
+    case Kelvin = "K", Celsius = "C", Fahrenheit = "F"
+}
+
+let fahrenheitUnit = TemperatureUnit(rawValue: "F")
+if fahrenheitUnit != nil {
+    print("This is a defined temperature unit, so initialization succeeded.")
+}
+// prints "This is a defined temperature unit, so initialization succeeded."
+
+let unknownUnit = TemperatureUnit(rawValue: "X")
+if unknownUnit == nil {
+    print("This is not a defined temperature unit, so initialization failed.")
+}
+// prints "This is not a defined temperature unit, so initialization failed."
+
+
+
 
