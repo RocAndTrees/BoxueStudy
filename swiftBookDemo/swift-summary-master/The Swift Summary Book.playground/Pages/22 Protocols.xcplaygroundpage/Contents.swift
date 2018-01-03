@@ -75,6 +75,8 @@ class Starship: FullyNamed {
     }
 }
 var ncc1701 = Starship(name: "Enterprise", prefix: "USS")
+ncc1701.fullName
+
 
 
 /*
@@ -85,6 +87,7 @@ var ncc1701 = Starship(name: "Enterprise", prefix: "USS")
 
 protocol RandomNumberGenerator {
     func random() -> Double
+
 }
 
 class LinearCongruentialGenerator: RandomNumberGenerator {
@@ -126,17 +129,17 @@ protocol Togglable {
 }
 
 enum OnOffSwitch: Togglable {
-    case Off, On
+    case off, on
     mutating func toggle() {
         switch self {
-        case Off:
-            self = On
-        case On:
-            self = Off
+        case .off:
+            self = .on
+        case .on:
+            self = .off
         }
     }
 }
-var lightSwitch = OnOffSwitch.Off
+var lightSwitch = OnOffSwitch.off
 lightSwitch.toggle()
 // lightSwitch is now equal to .On
 
@@ -207,6 +210,7 @@ class Dice {
         self.generator = generator
     }
     func roll() -> Int {
+        
         return Int(generator.random() * Double(sides)) + 1
     }
 }
@@ -429,7 +433,7 @@ struct Personn: Named, Aged {
     var name: String
     var age: Int
 }
-func wishHappyBirthday(celebrator: protocol<Named, Aged>) {
+func wishHappyBirthday(celebrator: Named & Aged) {
     print("Happy birthday \(celebrator.name) - you're \(celebrator.age)!")
 }
 let birthdayPerson = Personn(name: "Malcolm", age: 21)

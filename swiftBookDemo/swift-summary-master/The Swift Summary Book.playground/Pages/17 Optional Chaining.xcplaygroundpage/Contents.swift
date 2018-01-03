@@ -43,6 +43,7 @@ let john = Person()
 
 //Doing it with optional chaining
 
+
 if let roomCount = john.residence?.numberOfRooms {
     print("John's residence has \(roomCount) room(s).")
 } else {
@@ -158,7 +159,7 @@ bob.residence = otherResidence
  printNumberOfRooms() method, even though the method does not itself define a return value.
  */
 
-if let void = bob.residence?.printNumberOfRooms() {
+if bob.residence?.printNumberOfRooms() != nil {
     print("It was possible to print the number of rooms.")
 } else {
     print("It was not possible to print the number of rooms.")
