@@ -10,11 +10,27 @@ import RxSwift
 import UIKit
 
 class ViewController: UIViewController {
-    
+    //重点： observable 、 operators
+    // 1. 订阅才会调用的observable 2. 创建就会调用的observable
     override func viewDidLoad() {
         super.viewDidLoad()
         
+//        Observable.of("1", "2", "3", "4", "5", "6", "7", "8", "9")
         
+        let evenNumberObservable = Observable.from(["1", "2", "3", "4", "5", "6", "7", "8", "9"]).map{ Int($0)}
+            .filter {
+                if let item = $0, item % 2 == 0 {
+                    print(item);
+                    return true
+                }
+                
+                return false
+        }
+        
+        evenNumberObservable.subscribe { event in
+            print("Event: \(event)")
+            
+        }
     }
     
     
