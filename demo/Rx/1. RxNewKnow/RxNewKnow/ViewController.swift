@@ -27,10 +27,10 @@ class ViewController: UIViewController {
                 return false
         }
         
-        evenNumberObservable.subscribe { event in
+        _ = evenNumberObservable.subscribe { event in
             print("Event: \(event)")
-            
         }
+        
     }
     
     

@@ -386,6 +386,10 @@ extension SnakesAndLadders: PrettyTextRepresentable {
     }
 }
 
+let sanke = SnakesAndLadders()
+sanke.prettyTextualDescription
+
+
 /*
  This example defines a new protocol, PrettyTextRepresentable, which inherits from TextRepresentable.
  Anything that adopts PrettyTextRepresentable must satisfy all of the requirements enforced by TextRepresentable,
