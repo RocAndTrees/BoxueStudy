@@ -20,6 +20,7 @@
 		C1A590DA1FD53059001B2ACA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1A590D41FD53059001B2ACA /* AppDelegate.swift */; };
 		C1A590DB1FD53059001B2ACA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C1A590D61FD53059001B2ACA /* LaunchScreen.storyboard */; };
 		C1A590DC1FD53059001B2ACA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C1A590D71FD53059001B2ACA /* Main.storyboard */; };
+		C1F3D3A620034721001264C8 /* URLSessionProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1F3D3A520034721001264C8 /* URLSessionProtocol.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +59,7 @@
 		C1A590D41FD53059001B2ACA /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C1A590D61FD53059001B2ACA /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C1A590D71FD53059001B2ACA /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		C1F3D3A520034721001264C8 /* URLSessionProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionProtocol.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -141,6 +143,7 @@
 		C1A5909B1FD52F77001B2ACA /* Sky */ = {
 			isa = PBXGroup;
 			children = (
+				C1F3D3A4200346EC001264C8 /* Protocols */,
 				C137621C1FD630FA00BE9CE0 /* Manager */,
 				C13762141FD62F0200BE9CE0 /* Model */,
 				C13762111FD62E0000BE9CE0 /* Configuration */,
@@ -203,6 +206,14 @@
 				C1A590D71FD53059001B2ACA /* Main.storyboard */,
 			);
 			path = StroyBoards;
+			sourceTree = "<group>";
+		};
+		C1F3D3A4200346EC001264C8 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				C1F3D3A520034721001264C8 /* URLSessionProtocol.swift */,
+			);
+			path = Protocols;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -340,6 +351,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C1F3D3A620034721001264C8 /* URLSessionProtocol.swift in Sources */,
 				C14E48F91FD8EB8500B1C9E3 /* WeatherDataManager.swift in Sources */,
 				C13762161FD62F0C00BE9CE0 /* LocationModel.swift in Sources */,
 				C137621B1FD6300200BE9CE0 /* WeatherData.swift in Sources */,
