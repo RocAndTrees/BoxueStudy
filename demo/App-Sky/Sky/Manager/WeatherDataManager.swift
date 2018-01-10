@@ -17,8 +17,8 @@ enum DataManagerError: Error {
 
 final class WeatherDataManager {
     internal let baseURL: URL
-    internal let urlSession: URLSession
-    internal init(baseURL: URL, urlSession: URLSession) {
+    internal let urlSession: URLSessionProtocol
+    internal init(baseURL: URL, urlSession: URLSessionProtocol) {
         self.baseURL = baseURL
         self.urlSession = urlSession
     }
@@ -40,16 +40,15 @@ final class WeatherDataManager {
         request.httpMethod = "GET"
         
         // 3. Launch the request
-        self.urlSession.dataTask(with: request,
-                                   completionHandler: {
-                                    (data, response, error) in
-                                    DispatchQueue.main.async {
-                                        self.didFinishGettingWeatherData(
-                                            data: data,
-                                            response: response,
-                                            error: error,
-                                            completion: completion)
-                                    }
+        self.urlSession.dataTask(with: request, completionHandler: {
+                (data, response, error) in
+                DispatchQueue.main.async {
+                    self.didFinishGettingWeatherData(
+                        data: data,
+                        response: response,
+                        error: error,
+                        completion: completion)
+            }
         }).resume()
 
     }

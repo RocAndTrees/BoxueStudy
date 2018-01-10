@@ -21,16 +21,20 @@ class WeatherDataManagerTest: XCTestCase {
         super.tearDown()
     }
     
-    func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-    }
-    
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
-        }
+   
+    func test_weatherDataAt_starts_the_session() {
+        let session = MockURLSession()
+        let dataTask = MockURLSessionDataTask()
+        
+        session.sessionDataTask = dataTask
+        
+        let manager = WeatherDataManager(
+            baseURL: URL(string: "https://darksky.net")!,
+            urlSession: session)
+        
+        manager.weatherDataAt(latitude: 52, longitude: 100, completion: { _, _ in })
+        
+        XCTAssert(session.sessionDataTask.isResumeCalled)
     }
     
 }
